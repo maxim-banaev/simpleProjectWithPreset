@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "my_preset",
+      "displayName": "My Preset Profile",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/my_preset"
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "default",
+      "configurePreset": "my_preset"
+    }
+  ]
+}
+
